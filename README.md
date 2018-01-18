@@ -19,7 +19,7 @@
 
 ## Installation
 
-  Download from http://github.com/cdrasmussen/cli-template
+  Download from http://github.com/cdrasmussen/cli-template  
   The files in this directory are supported by the build tools
   Leiningen and thus Maven.
 
