@@ -6,14 +6,13 @@
   minimize the effort of repeatedly building similar machinery.  
   Edit parts you want, delete what you don't want.
   
-  It has no core functionality of its own since the expected sequence
+  It has no core functionality of its own since the expected development sequence
   is to build a core functionality module with its own unit tests then
   use this code as a basis for a command line utility that will host
-  your new core module.
+  your new core module. 
 
-  By using this development pattern the developer is following the
-  strategy of polyvalent development described in Eric Raymond's "Art
-  of Unix Programming".
+  This development pattern follows the strategy of polyvalent development
+  described in Eric Raymond's "Art of Unix Programming".
 
   Command line parsing is provided by clojure.tools.cli for which we
   are all grateful.
@@ -21,6 +20,8 @@
 ## Installation
 
   Download from http://github.com/cdrasmussen/cli-template
+  The files in this directory are supported by the build tools
+  Leiningen and thus Maven.
 
 ## Invocation
  
@@ -44,18 +45,19 @@
 
   * src/manual.clj  
     An exercise in automating a manpage embedded in source code.  
-    It is in it's own file so as not to force developers to
+    In it's own file so as not to force developers to
     deal with its verbosity when developing a simple utility where
     an embedded man page isn't apropos.
 
   * src/trace-ops.clj
-    Simple trace functions enabled by a boolean.
+    Simple trace functions enabled by a boolean which is currently
+    toggled by a command line switch.
 
 ## Notice to Developers
 
   I wrote this to help developers, especially those new to Clojure.
-  To share your thoughts on this topic, please email me at
-  rasmussen.cd@gmail.com with cli-template in the subject line.
+  To share your thoughts on this, email me at
+  rasmussen.cd@gmail.com with cli-template in the subject.
 
 ## License
 
