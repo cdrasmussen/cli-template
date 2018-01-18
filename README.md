@@ -49,14 +49,14 @@
     deal with its verbosity when developing a simple utility where
     an embedded man page isn't apropos.
 
-  * src/trace-ops.clj
+  * src/trace-ops.clj  
     Simple trace functions enabled by a boolean which is currently
     toggled by a command line switch.
 
 ## Notice to Developers
 
-  I wrote this to help developers, especially those new to Clojure.
-  To share your thoughts on this, email me at
+  I wrote this to help other developers, especially those new to Clojure.
+  To share your thoughts, email me at
   rasmussen.cd@gmail.com with cli-template in the subject.
 
 ## License
