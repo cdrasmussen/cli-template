@@ -3,19 +3,20 @@
 ## Description
 
   This is a template for a CLI utility program in Clojure. Its goal is to
-  minimize the effort of repeatedly building similar machinery.
+  minimize the effort of repeatedly building similar machinery.  
+  Edit parts you want, delete what you don't want.
   
   It has no core functionality of its own since the expected sequence
   is to build a core functionality module with its own unit tests then
-  use this code as a basis for the command line utility that will host
-  that core module.
+  use this code as a basis for a command line utility that will host
+  your new core module.
 
   By using this development pattern the developer is following the
   strategy of polyvalent development described in Eric Raymond's "Art
   of Unix Programming".
 
   Command line parsing is provided by clojure.tools.cli for which we
-  are grateful.
+  are all grateful.
 
 ## Installation
 
@@ -23,6 +24,7 @@
 
 ## Invocation
 
+  $ lein uberjar
   $ java -jar target/uberjar/cli-template-0.1.0-standalone.jar [args]
 
 ## Options
@@ -38,15 +40,22 @@
      --version prints program version
 </pre>
 
-### Additional Files
+## Additional Files
 
   * src/manual.clj  
-    Exercise in automating a manpage using program source.  
+    An exercise in automating a manpage embedded in source code.  
     It is in it's own file so as not to force developers to
-    deal with it when developing a simple utility.
+    deal with its verbosity when developing a simple utility where
+    an embedded man page isn't apropos.
 
   * src/trace-ops.clj
     Simple trace functions enabled by a boolean.
+
+## Notice to Developers
+
+  I wrote this to help other developers, especially those new to Clojure.
+  To share your thoughts on this topic, please email me at
+  rasmussen.cd@gmail.com with cli-template in the subject line.
 
 ## License
 
