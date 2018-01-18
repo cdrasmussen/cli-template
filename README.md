@@ -23,8 +23,8 @@
   Download from http://github.com/cdrasmussen/cli-template
 
 ## Invocation
-
-  $ lein uberjar
+ 
+  $ lein uberjar  
   $ java -jar target/uberjar/cli-template-0.1.0-standalone.jar [args]
 
 ## Options
@@ -53,7 +53,7 @@
 
 ## Notice to Developers
 
-  I wrote this to help other developers, especially those new to Clojure.
+  I wrote this to help developers, especially those new to Clojure.
   To share your thoughts on this topic, please email me at
   rasmussen.cd@gmail.com with cli-template in the subject line.
 
