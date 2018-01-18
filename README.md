@@ -53,16 +53,15 @@
     Simple trace functions enabled by a boolean which is currently
     toggled by a command line switch.
 
-## Notice to Developers
+## To Developers
 
-  I wrote this to help other developers, especially those new to Clojure.
+  I wrote this to help other developers, especially those new to Clojure.  
   To share your thoughts, email me at
   rasmussen.cd@gmail.com with cli-template in the subject.
 
 ## License
 
-Copyright © 2017 CD Rasmussen, rasmussen.cd@gmail.com
-
+Copyright © 2017 CD Rasmussen, rasmussen.cd@gmail.com  
 Distributed under the Eclipse Public License either version 1.0 or any
 later version.
 
