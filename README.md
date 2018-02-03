@@ -2,17 +2,17 @@
 
 ## Description 
 
-  This is a template for a CLI (command line interface) utility program in Clojure.
+  This is a template for a CLI (command line interface) utility program in Clojure.  
   Its goal is to minimize the effort of repeatedly building similar machinery.  
   So edit parts you want, delete what you don't want.
   
   It has no core functionality of its own since the expected development sequence
   is to build a core functionality module with its own unit tests then
-  use this code as a basis for a command line utility that will host
-  that core functionality module. 
+  use this code to host
+  that core functionality whether it is used as a utility or launch a GUI or a server.
 
   This development pattern follows the polyvalent development strategy described
-  in [Eric Raymond's "Art of Unix Programming"](http://www.catb.org/esr/writings/taoup/),
+  in [Eric Raymond's "Art of Unix Programming"](http://www.catb.org/esr/writings/taoup/).  
   Polyvalent development is a strategy for which Clojure is well suited.
 
   Command line parsing is provided by [clojure.tools.cli](https://github.com/clojure/tools.cli), for which we are all grateful.
@@ -46,9 +46,9 @@
 
   * src/manual.clj  
     An exercise in automating a manpage embedded in source code.  
-    In it's own file so as not to force developers to
+    It is in it's own file so as not to force developers to
     deal with its verbosity when developing a simple utility where
-    an embedded man page isn't apropos.
+    an embedded man page isn't appropriate.
 
   * src/tell-tale.clj  
     Simple trace functions enabled by a boolean which is currently
