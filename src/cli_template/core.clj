@@ -42,7 +42,7 @@
   
   Where:
 
-  -v|--verbose enable verbose output messages, (repeatable)
+  -v|--verbose enable verbose output messages (repeatable)
   -q|--quiet reduces normal program output to a minimum
   -h|--help prints this usage text
      --trace prints trace info
@@ -115,7 +115,7 @@
         cli-errors (cli-parsed :errors)]
 
     (def tell-tale (cli-opts :trace))
-    (tell-entry "cli-template" args)))
+    (tell-entry "cli-template" args)
     (tell-val cli-parsed)
     (tell-val cli-errors)
 
@@ -130,4 +130,4 @@
       (println "This where the core functionally happens."))
 
     (if-not (cli-opts :quiet)
-      (println "Core logic needed to do great things. Apply within."))))
+      (println "Core logic needed to get things done. Apply within."))))
