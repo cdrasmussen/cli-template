@@ -1,6 +1,6 @@
 (defproject cli-template "0.1.0"
   :description "CLI template for processing command options"
-  :url "http://example.com/FIXME"
+  :url "http://github.com/cdrasmussen/cli-template"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]

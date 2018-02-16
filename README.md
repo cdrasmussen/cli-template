@@ -2,35 +2,38 @@
 
 ## Description 
 
-  This is a template for a CLI (command line interface) utility program in Clojure.  
-  Its goal is to minimize the effort of repeatedly building similar machinery.  
-  So edit parts you want, delete what you don't want.
+This is a template for a CLI (command line interface) utility program in Clojure.  
+Its goal is to minimize the effort of repeatedly building similar machinery.  
+So edit parts you want, delete what you don't want.
   
-  It has no core functionality of its own since the expected development sequence
-  is to build a core functionality module with its own unit tests then
-  use this code to host
-  that core functionality whether it is used as a utility or launch a GUI or a server.
+It has no core functionality of its own since the expected development
+sequence is to build a core functionality module with its own unit
+tests then use this code to host that core functionality whether it is
+used as a utility or launch a GUI or a server.
 
-  This development pattern follows the polyvalent development strategy described
-  in [Eric Raymond's "Art of Unix Programming"](http://www.catb.org/esr/writings/taoup/).  
-  Polyvalent development is a strategy for which Clojure is well suited.
+This development pattern follows the polyvalent development strategy
+described in [Eric Raymond's "Art of Unix Programming"](http://www.catb.org/esr/writings/taoup/).  
+Polyvalent development is a strategy for which Clojure is well suited.
 
-  Command line parsing is provided by [clojure.tools.cli](https://github.com/clojure/tools.cli), for which we are all grateful.
+Command line parsing is provided by
+[clojure.tools.cli](https://github.com/clojure/tools.cli), for which
+we are all grateful.
 
 ## Installation
 
-  Download from http://github.com/cdrasmussen/cli-template  
-  The files in this directory are supported by the build tool
-  [Leiningen](https://leiningen.org/).
+Download from http://github.com/cdrasmussen/cli-template  
+The files in this directory are supported by the build tool
+[Leiningen](https://leiningen.org/).
 
 ## Invocation
- 
+<PRE> 
   $ cd cli-template  
   $ lein uberjar  
   $ java -jar target/uberjar/cli-template-0.1.0-standalone.jar [args]
+</PRE>
 
-## Options
-```
+## Example Options Provided
+<PRE>
   Usage: cli-template [-v|--verbose] [-q|--quiet]
                    [-h|--help] [--version] [--trace]
   
@@ -40,7 +43,7 @@
   -h|--help prints this usage text  
      --trace prints trace info  
      --version prints program version
-```
+</PRE>
 
 ## Additional Files
 
@@ -67,4 +70,4 @@ Copyright © 2017 CD Rasmussen, rasmussen.cd@gmail.com
 Distributed under the Eclipse Public License either version 1.0 or any
 later version.
 
-_updated 2018-02-03_
+_updated 2018-02-15_
